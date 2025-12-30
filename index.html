@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>🌤️ Ауа райы</h2>
+
+    <input
+        type="text"
+        id="cityInput"
+        placeholder="Қаланы қазақша енгізіңіз"
+        oninput="showCities()"
+        autocomplete="off"
+    >
+
+    <div id="suggestions"></div>
+
+    <button onclick="getWeather()">Іздеу</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
